@@ -43,9 +43,31 @@
 	}
 }
 
+@keyframes slideright {
+	from{
+		margin-right: 20000%;
+	}
+	to{
+		margin-right: 0%;
+
+	}
+}
+
 @keyframes fade {
   to {
     opacity: 1;
+  }
+}
+
+@keyframes gradienteAnimacao {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
   }
 }
 
@@ -70,6 +92,43 @@ body {
   height: 100vh;
 }
 
+audio {
+	border-radius: 30px;
+	padding: 0px;
+	margin: 0px;
+  opacity: 0.5; /* Define a opacidade para 50% */
+  transition: opacity 0.3s;
+}
+
+audio:hover {
+  opacity: 1;
+}
+
+.audio-control {
+	text-align: center;
+	float: right;
+	/*padding: 10px;
+	padding-bottom: 0px;*/
+	animation-duration: 5s;
+	animation-name: slidetop;
+}
+
+.sintonize {
+  font-family: "Pattaya", sans-serif;
+	padding: 0px;
+	margin: 0px;
+	font-size: 20px;
+
+  background: linear-gradient(270deg, #00000000, #af002d 40%, #00000000);
+  background-size: 200% 200%;
+  /*border-radius: 8px;
+  padding: 3px;*/
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradienteAnimacao 10s ease infinite;
+}
+
 .header {
   align-items: center;
   justify-content: center;
@@ -79,48 +138,102 @@ body {
 
 .main {
   padding: 10%;
+  padding-bottom: 20px;
   align-items: center;
   justify-content: center;
-  /*flex-direction: column;*/
-  display: flex;
+  /*flex-direction: column;
+  display: flex;*/
 }
 
 .sub-main {
   padding: 5px;
 }
 
-.cp-img {
-  width: 250px;
-  animation: slidebottom 2.5s forwards;
-}
-
 .title{
   font-family: "Cairo Play", sans-serif;
-  animation: slidetop 3s;
+  font-size: 60px;
+  animation: slidetop 2.2s;
+  color: whitesmoke;
+}
+
+.sub-title {
+  font-family: "Dosis";
+  font-size: 30px;
+  font-weight: bold;
+  background: linear-gradient(270deg, #ff7a18, #af002d 51%, #175ad6);
+  background-size: 200% 200%;
+  border-radius: 8px;
+  padding: 3px;
+  /*background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;*/
+  animation: gradienteAnimacao 5s ease infinite;
 }
 
 .button {
-  font-family: "Expletus Sans", sans-serif;
-  font-size: 18px;
-  background-color: rgba(73, 76, 87, 0.5);
-  padding: 6px;
-  border-radius: 10px;
+  font-family: "Dosis";
+  font-size: 40px;
+  padding: 5px;
   opacity: 0;
-  animation: fade 5s forwards;
+  animation: fade 2.5s forwards 2s;
 }
 
 .links:hover {
-  animation: colors 0.5s ease-in-out infinite;
-
+  transition: 0.3s;
+  font-size: 120%;
+  width: 120%;
+  animation: colors 5s ease-in-out infinite;
 }
 
 .footer {
   font-family: "Cairo Play", sans-serif;
+  background-color: black;
   position: fixed;
   bottom: 0;
   text-align: center;
   justify-content: center;
+  align-items: center;
   display: flex;
+  font-size: 20px;
   width: 100%;
   padding-bottom: 10px;
+}
+
+.main-contact {
+  margin-top: 0px;
+  align-items: center;
+  justify-content: center;
+  /*flex-direction: column;*/
+  display: flex;
+}
+
+.sub-main-contact {
+  padding: 30px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.contact-title {
+  font-family: "Dosis";
+  font-size: 40px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.title-contato {
+  opacity: 0;
+  animation: fade 2.5s forwards 2s;
+}
+
+.icon {
+  width: 60px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fade 2.5s forwards 2s;
 }
