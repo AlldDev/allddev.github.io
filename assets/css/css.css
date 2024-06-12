@@ -87,7 +87,7 @@ html {
 }
 
 body {
-  background-color: rgba(0, 0, 0, 0.6);
+  background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
   height: 100vh;
 }
@@ -177,6 +177,10 @@ audio:hover {
   opacity: 0;
   animation: fade 2.5s forwards 2s;
 }
+.button:hover {
+  transition: 0.3s;
+  font-size: 45px;
+}
 
 .links:hover {
   transition: 0.3s;
@@ -236,4 +240,81 @@ audio:hover {
   align-items: center;
   opacity: 0;
   animation: fade 2.5s forwards 2s;
+}
+.icon:hover {
+  transition: 0.3s;
+  width: 65px;
+}
+
+/*########################################################
+# Medias Querys
+########################################################*/
+
+@media screen and (max-width: 360px) {
+  html {
+    background-image: url('../imgs/fundo-index.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  audio{
+    display: none;
+  }
+  .audio-control {
+    display: none;
+  }
+  .sintonize {
+    display: none;
+  }
+  .header {
+    margin-top: 60px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+  .sub-title {
+    font-size: 12px;
+  }
+  .main-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .contact-title {
+    padding: 0px;
+    margin: 0px;
+  }
+  .title-contato {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .sub-main-contact {
+    padding: 0px;
+  }
+  .icon {
+    width: 20px;
+    padding: 4px;
+    margin: 0px;
+  }
+  .icon:hover {
+    width: 25px;
+  }
+  .button {
+    font-size: 15px;
+    padding: 0px;
+    margin: 0px;
+  }
+  .button:hover {
+    transition: 0.3s;
+    font-size: 20px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+
+
+
+
 }
