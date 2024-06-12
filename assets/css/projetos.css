@@ -1,0 +1,299 @@
+/*########################################################
+# Animações
+########################################################*/
+
+@keyframes colors {
+  0% {
+      color: red;
+  }
+  20% {
+      color: yellow;
+  }
+  40% {
+      color: yellowgreen;
+  }
+  70% {
+    color: orange;
+  }
+  80% {
+    color: cyan;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@keyframes slidetop {
+	from{
+		margin-top: -300%;
+	}
+	to{
+		margin-top: 0%;
+
+	}
+}
+
+@keyframes slidebottom {
+	from{
+		margin-bottom: -300%;
+	}
+	to{
+		margin-top: 0%;
+
+	}
+}
+
+@keyframes slideright {
+	from{
+		margin-right: 20000%;
+	}
+	to{
+		margin-right: 0%;
+
+	}
+}
+
+@keyframes fade {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes gradienteAnimacao {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/*########################################################
+# Style
+########################################################*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+  color: aliceblue;
+  text-decoration: none;
+}
+
+html {
+  background-image: url('../imgs/backgrounds/fundo-projetos.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  height: 100vh;
+}
+
+.header {
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+}
+
+.main {
+  padding: 10%;
+  padding-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+  /*flex-direction: column;
+  display: flex;*/
+}
+.title{
+  font-family: "Cairo Play", sans-serif;
+  font-size: 60px;
+  animation: slidetop 1s;
+  color: whitesmoke;
+}
+.sub-main {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.button-f{
+  font-family: "Dosis";
+  font-size: 40px;
+  border-radius: 20px;
+  padding: 20px;
+}
+.button-f:hover{
+  transition: 0.5s;
+  font-size: 45px;
+}
+.b1 {
+  background-image: url(../imgs/buttons/spyware.jpg);
+  background-size: cover;
+  opacity: 0;
+  animation: fade 3s forwards 1s;
+}
+.b2 {
+  background-image: url(../imgs/buttons/portscanner.jpg);
+  background-size: cover;
+  opacity: 0;
+  animation: fade 3s forwards 1.5s;
+}
+.b3 {
+  background-image: url(../imgs/buttons/mailphishing.jpg);
+  background-size: cover;
+  opacity: 0;
+  animation: fade 3s forwards 2s;
+}
+.b4 {
+  background-image: url(../imgs/buttons/wifihacking.jpg);
+  background-size: cover;
+  opacity: 0;
+  animation: fade 3s forwards 2.5s;
+}
+.links:hover {
+  transition: 0.5s;
+  font-size: 120%;
+  width: 120%;
+  animation: colors 5s ease-in-out infinite;
+}
+
+.footer {
+  font-family: "Cairo Play", sans-serif;
+  background-color: black;
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  font-size: 20px;
+  width: 100%;
+  padding-bottom: 10px;
+}
+
+
+/*########################################################
+# Medias Querys
+########################################################*/
+
+@media screen and (min-width: 300px) {
+  .header {
+    margin-top: 60px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+  .sub-main {
+    flex-direction: column;
+  }
+  .button-f {
+    font-family: "Dosis";
+    font-size: 30px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .button-f:hover {
+    transition: 0.5s;
+    font-size: 35px;
+  }
+  .button-p {
+    padding: 25px;
+  }
+  .footer {
+    font-size: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .header {
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 25px;
+  }
+  .sub-main {
+    flex-direction: column;
+  }
+  .button-f {
+    font-family: "Dosis";
+    font-size: 40px;
+    border-radius: 15px;
+    padding: 10px;
+  }
+  .button-f:hover {
+    transition: 0.5s;
+    font-size: 45px;
+  }
+  .button-p {
+    padding: 25px;
+  }
+  .footer {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 860px) {
+  .header {
+    margin-top: 40px;
+  }
+
+  .title {
+    font-size: 40px;
+  }
+  .sub-main {
+    flex-direction: row;
+  }
+  .button-f {
+    font-family: "Dosis";
+    font-size: 27px;
+    border-radius: 10px;
+    padding: 10px;
+  }
+  .button-f:hover {
+    transition: 0.5s;
+    font-size: 32px;
+  }
+  .button-p {
+    padding: 15px;
+  }
+  .footer {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .title{
+    font-size: 50px;
+  }
+  .sub-main {
+    margin-top: 30px;
+  }
+  .button-f {
+    font-family: "Dosis";
+    font-size: 30px;
+    border-radius: 20px;
+    padding: 20px;
+  }
+  .button-f:hover {
+    transition: 0.5s;
+    font-size: 35px;
+  }
+  .button-p {
+    padding: 15px;
+  }
+  .links:hover {
+    transition: 0.5s;
+    font-size: 120%;
+    width: 120%;
+    animation: colors 5s ease-in-out infinite;
+  }
+  .footer {
+    font-size: 20px;
+    width: 100%;
+  }
+}
