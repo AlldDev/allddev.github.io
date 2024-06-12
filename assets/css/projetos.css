@@ -86,6 +86,7 @@ html {
   background-image: url('../imgs/backgrounds/fundo-projetos.gif');
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
 }
 
 body {
@@ -160,6 +161,12 @@ body {
   font-size: 120%;
   width: 120%;
   animation: colors 5s ease-in-out infinite;
+}
+.return {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 20px;
 }
 
 .footer {
