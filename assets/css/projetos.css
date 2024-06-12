@@ -167,6 +167,8 @@ body {
   text-align: center;
   justify-content: center;
   margin-top: 20px;
+  opacity: 0;
+  animation: fade 3s forwards 3s;
 }
 
 .footer {
@@ -211,6 +213,9 @@ body {
   }
   .button-p {
     padding: 25px;
+  }
+  .return {
+    font-size: 20px;
   }
   .footer {
     font-size: 10px;
