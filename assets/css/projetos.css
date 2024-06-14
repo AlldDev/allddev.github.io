@@ -215,7 +215,13 @@ body {
     padding: 25px;
   }
   .return {
-    font-size: 20px;
+    padding: 0px;
+  }
+  .voltar {
+    font-size: 15px;
+  }
+  .mais {
+    font-size: 15px;
   }
   .footer {
     font-size: 10px;
@@ -223,7 +229,7 @@ body {
 }
 @media screen and (min-width: 480px) {
   .header {
-    margin-top: 40px;
+    margin-top: 35px;
   }
 
   .title {
@@ -244,6 +250,16 @@ body {
   }
   .button-p {
     padding: 25px;
+  }
+  .return {
+    padding: 0px;
+    margin-top: 0px;
+  }
+  .voltar {
+    font-size: 20px;
+  }
+  .mais {
+    font-size: 20px;
   }
   .footer {
     font-size: 15px;
